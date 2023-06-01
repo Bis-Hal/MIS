@@ -1,0 +1,57 @@
+spring:
+  profiles:
+    active: qa
+
+
+#---
+#
+#spring:
+#  profile: dev
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/estore_dev
+#    username: root
+#    password: ''
+#    class_driver: com.mysql.jdbc.Driver
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    #      ddl-auto: create-drop
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5Dialect
+
+---
+
+spring:
+  profile: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/estore_qa
+    username: root
+    password: ''
+    class_driver: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+            ddl-auto : update
+#      ddl-auto: create-drop
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5Dialect
+
+---
+
+#spring:
+#  profile: prod
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/estore_prod
+#    username: root
+#    password: ''
+#    class_driver: com.mysql.jdbc.Driver
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5Dialect
